@@ -1,0 +1,117 @@
+<ion-view view-title="Samastipur">
+  <ion-content>
+    <ion-list>
+      <ion-item href="#/app/playlists/1">
+        Major Crops
+      </ion-item>
+    </ion-list>
+    <div class="list">
+      <a class="item item-avatar">
+      <img src="img/riceico.jpg">
+      <h2>Rice</h2>
+      <p>Kharif</p>
+    </a>
+    <a class="item item-avatar">
+    <img src="img/wheatico.jpg">
+    <h2>Wheat</h2>
+    <p>Rabi</p>
+  </a>
+  <a class="item item-avatar">
+  <img src="img/kodoico.jpg">
+  <h2>Kodon-Kutki</h2>
+  <p>Rabi</p>
+</a>
+<a class="item item-avatar">
+<img src="img/linseedico.jpg">
+<h2>Linseed</h2>
+<p>Rabi</p>
+</a>
+<a class="item item-avatar">
+<img src="img/maizeico.jpg">
+<h2>Maize</h2>
+<p>Rabi</p>
+</a>
+</div>
+    <div class="card">
+  <div class="item item-divider">
+    Previous Forecast
+  </div>
+  <div class="item item-text-wrap">
+    According to meteorological data recorded at Agro meteorological Observatory, Pusa (Bihar), average maximum and minimum temperature were 22.8°C and 8.8°C respectively. Average relative humidity was 88 percent at 0700 hrs and 55 percent at 1400 hrs. Soil temperature at 5 cm depth was 12.6°C at 0700 hrs and 20.9°C at 1400 hrs. Average wind speed, daily sunshine hours and average daily evaporation were 1.6 km/hr, 1.2 hours and 0.7 mm respectively. No rainfall was recorded during this period.
+  </div>
+  <div class="item item-divider">
+    GRAMIN KRISHI MAUSAM SEWA
+  </div>
+  <ion-list>
+    <ion-item>
+      Medium Range Forecast
+    </ion-item>
+  </ion-list>
+  <div class="card">
+<div class="item item-divider">
+  Rainfall
+</div>
+<div class="item item-text-wrap">
+  Chances of light drizzle/rainfall during 19-20 Jan. at some places
+</div>
+<div class="item item-divider">
+  <div class="item range range-positive">
+  <i class="icon ion-ios-rainy"></i>
+  <input type="range" name="volume" value="33" ng-disabled="true">
+</div>
+</div>
+</div>
+<div class="card">
+<div class="item item-divider">
+Temperature
+</div>
+<div class="item item-text-wrap">
+Maximum temperature will remain between 19-27°C and the minimum around 11-13°C.
+</div>
+<div class="item item-divider">
+<div class="item range range-assertive">
+<i class="icon ion-thermometer"></i>
+<input type="range" name="volume" value="27" ng-disabled="true">
+</div>
+</div>
+</div>
+<div class="card">
+<div class="item item-divider">
+Cloud Cover
+</div>
+<div class="item item-text-wrap">
+Partially cloudy sky
+</div>
+<div class="item item-divider">
+<div class="item range range-energized">
+<i class="icon ion-cloud"></i>
+<input type="range" name="volume" value="50" ng-disabled="true">
+</div>
+</div>
+</div>
+<div class="card">
+<div class="item item-divider">
+Max Relative Humidity
+</div>
+<div class="item item-divider">
+<div class="item range range-calm">
+<i class="icon ion-waterdrop"></i>
+<input type="range" name="volume" value="34" ng-disabled="true">
+</div>
+</div>
+</div>
+<div class="card">
+<div class="item item-divider">
+Weather Analysis
+</div>
+<div class="item item-divider">
+  <canvas id="line" class="chart chart-line" chart-data="data"
+    chart-labels="labels" chart-legend="true" chart-series="series"
+    chart-click="onClick" >
+  </canvas> 
+</div>
+</div>
+</div>
+
+  </ion-content>
+</ion-view>
