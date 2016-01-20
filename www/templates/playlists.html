@@ -1,6 +1,17 @@
 <ion-view view-title="Samastipur">
   <ion-content>
     <ion-list>
+      <div class="card">
+      <div class="item item-divider">
+      Climate Analysis
+      </div>
+      <div class="item item-divider">
+        <canvas id="line" class="chart chart-line" chart-data="data"
+          chart-labels="labels" chart-series="series">
+        </canvas>
+      </div>
+      </div>
+      </div>
       <ion-item href="#/app/playlists/1">
         Major Crops
       </ion-item>
@@ -102,13 +113,47 @@ Max Relative Humidity
 </div>
 <div class="card">
 <div class="item item-divider">
-Weather Analysis
+Temperature Analysis
 </div>
 <div class="item item-divider">
-  <canvas id="line" class="chart chart-line" chart-data="data"
-    chart-labels="labels" chart-legend="true" chart-series="series"
-    chart-click="onClick" >
-  </canvas> 
+  <canvas id="line" class="chart chart-line" chart-data="datatemp"
+    chart-labels="labelstemp" chart-legend="true" chart-series="seriestemp">
+  </canvas>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="item item-divider">
+Rainfall Analysis
+</div>
+<div class="item item-divider">
+  <canvas id="line" class="chart chart-line" chart-data="datarain"
+    chart-labels="labelsrain" chart-legend="true" chart-series="seriesrain"
+    chart-colours="Blue">
+  </canvas>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="item item-divider">
+Humidity Analysis
+</div>
+<div class="item item-divider">
+  <canvas id="line" class="chart chart-line" chart-data="datahumid"
+    chart-labels="labelsrain" chart-legend="true" chart-series="serieshumid"
+    chart-colours="Blue">
+  </canvas>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="item item-divider">
+Wind Speed Analysis
+</div>
+<div class="item item-divider">
+  <canvas id="radar" class="chart chart-radar"
+  chart-data="datawind" chart-labels="labelsrain" chart-legend="true" chart-series="serieswind">
+</canvas>
 </div>
 </div>
 </div>
