@@ -1,0 +1,28 @@
+<ion-view view-title="{{currentMovieDetails.Title}}">
+  <ion-content>
+    <div class="card">
+      <div class="item item-divider">
+        {{currentMovieDetails.OriginalTitle}}
+      </div>
+      <div class="item item-image">
+        <img src="{{currentMovieDetails.PosterPath}}">
+      </div>
+      <div class="item item-text-wrap">
+        {{currentMovieDetails.Description}}
+        <div class="row">
+          <div class="col movie-grid">Censor</div>
+          <div class="col movie-grid">Rating</div>
+          <div class="col movie-grid">Genre</div>
+        </div>
+        <div class="row">
+          <div class="col movie-grid">{{currentMovieDetails.CensorRating}}</div>
+          <div class="col movie-grid">{{currentMovieDetails.Rating}}</div>
+          <div class="col movie-grid">{{currentMovieDetails.Genre}}</div>
+        </div>
+      </div>
+      <div class="item item-divider">
+        Expected Release Date : {{currentMovieDetails.ReleaseDate}}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

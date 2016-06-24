@@ -1,0 +1,40 @@
+<ion-view view-title="Search">
+  <ion-content>
+    <div class="card">
+      <div class="item item-divider">
+        Search By Title
+      </div>
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <input type="text" placeholder="Movie Name" ng-model="search.text">
+        </label>
+        <button class="button button-small" ng-click="searchMovie(search.text)">
+          Submit
+        </button>
+      </div>
+      <div class="item item-divider">
+        Results: {{results.length}}
+      </div>
+    </div>
+    <div class="list card" ng-repeat="result in results">
+
+      <div class="item item-divider">
+        {{result.OriginalTitle}}
+      </div>
+      <div class="item item-image movie-poster">
+        <img src="{{result.PosterPath}}">
+      </div>
+      <div class="item item-text-wrap">
+        {{result.Description | limitTo:100}}...
+      </div>
+      <a class="item item-icon-left assertive" href="" ng-click="setCurrentMovie(result)">
+        <i class="icon ion-arrow-expand"></i>
+        More Details
+      </a>
+      <div class="item item-divider">
+        Expected Release Date : {{result.ReleaseDate}}
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
