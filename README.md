@@ -11,3 +11,7 @@
 * Adding Storage to Upcoming, Releasing and Released routes to minimize API calls 
 * Adding Search by Year(optional)
 * Other...
+
+### Node Modules
+
+`[Angular Youtube Embed](https://github.com/brandly/angular-youtube-embed)`
