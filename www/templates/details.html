@@ -24,5 +24,21 @@
         Expected Release Date : {{currentMovieDetails.ReleaseDate}}
       </div>
     </div>
+    <div class="card" ng-show="{{currentMovieDetails.TrailerLink}}">
+      <div class="item item-divider">
+        Trailer
+      </div>
+      <div class="card">
+            <ion-item>
+              <div class="VidContainer">
+                <youtube-video class="video" video-id="youtubeVideoId"></youtube-video>
+              </div>
+            </ion-item>
+            <a class="item item-icon-left assertive" href={{currentMovieDetails.TrailerLink}}>
+              <i class="icon ion-social-youtube"></i>
+              View on Youtube
+            </a>
+        </div>
+    </div>
   </ion-content>
 </ion-view>

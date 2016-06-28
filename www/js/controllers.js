@@ -92,6 +92,8 @@ angular.module('andheri.controllers', [])
 
 .controller('DetailedMovieCtrl', function($scope,$http,CurrentMovieStorageService) {
   $scope.currentMovieDetails = CurrentMovieStorageService.getAll()[0];
+  $scope.youtubeVideoId = CurrentMovieStorageService.getAll()[0].TrailerLink.substring(CurrentMovieStorageService.getAll()[0].TrailerLink.indexOf("=")+1);
+  console.log($scope.youtubeVideoId);
 })
 
 .controller('SearchMovieCtrl', function($scope,$http,CurrentMovieStorageService,$state) {
