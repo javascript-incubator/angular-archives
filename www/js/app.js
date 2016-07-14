@@ -77,6 +77,14 @@ angular.module('andheri', ['ionic', 'ngStorage','andheri.factories','andheri.con
       }
     }
   })
+  .state('app.about', {
+    url: '/about',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/about.html'
+      }
+    }
+  })
   .state('app.details', {
     url: '/details',
     views: {
