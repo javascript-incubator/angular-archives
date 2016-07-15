@@ -112,4 +112,15 @@ angular.module('andheri.controllers', [])
      CurrentMovieStorageService.add(upcomingMovie);
      $state.go('app.details');
    }
+})
+
+
+.controller('AboutCtrl', function($scope,$http,$firebaseArray) {
+ var ref = firebase.database().ref().child('feedback');
+  $scope.messages = $firebaseArray(ref);
+  $scope.addMessage = function(newMessageText) {
+    $scope.messages.$add({
+      text: newMessageText
+    });
+  };
 });
