@@ -4,6 +4,8 @@ The Application shows the use of RDP algorithm for the simplification of vector 
 
 Uses Leaflet for Maps.
 
+Powered by [LineRunner](https://github.com/rajatsharma305/linerunner)
+
 ## Build & development
 
 #### Environment Setup
