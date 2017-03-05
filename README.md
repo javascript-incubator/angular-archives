@@ -26,4 +26,4 @@ npm install && bower install
 * `grunt build` for build
 * `grunt serve:dist` for preview of build
 
-[![Built with Science](http://forthebadge.com/images/badges/built-with-science.svg)](https://rdpinator.rajatsharma.rocks)
+[![Built with Science](http://forthebadge.com/images/badges/built-with-science.svg=300x)](https://rdpinator.rajatsharma.rocks)
