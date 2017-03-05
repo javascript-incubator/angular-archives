@@ -12,9 +12,4 @@ angular.module('ngRdpApp')
     $scope.goToMap = function(){
       $location.path('/map');
     }
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
   });
