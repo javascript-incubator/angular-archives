@@ -1,6 +1,8 @@
 # RDPinator
 
-The Application shows the use of RDP algorithm for the simplification of vector graphics and cartographic generalization..
+The Ramer–Douglas–Peucker algorithm (RDP) is an algorithm for reducing the number of points in a curve that is approximated by a series of points. The initial form of the algorithm was independently suggested in 1972 by Urs Ramer and 1973 by David Douglas and Thomas Peucker and several others in the following decade. This algorithm is also known under the names Douglas–Peucker algorithm, iterative end-point fit algorithm and split-and-merge algorithm.
+
+The Application shows the use of algorithm in for the simplification of vector graphics and cartographic generalization.
 
 Uses Leaflet for Maps.
 
@@ -29,4 +31,4 @@ npm install && bower install
 * `grunt serve:dist` for preview of build
 
 
-[![rdpinator](http://forthebadge.com/images/badges/built-by-crips.svg)](http://rdpinator.rajatsharma.rocks)
+[![rdpinator](http://forthebadge.com/images/badges/built-by-crips.svg)](http://rdpinator.generaljs.org)
