@@ -2,6 +2,14 @@ angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
+  // With the new view caching in Ionic, Controllers are only called
+  // when they are recreated or on app start, instead of every page change.
+  // To listen for when this page is active (for example, to refresh data),
+  // listen for the $ionicView.enter event:
+  //$scope.$on('$ionicView.enter', function(e) {
+  //});
+
+  // Form data for the login modal
   $scope.loginData = {};
 
   // Create the login modal that we will use later
@@ -36,37 +44,6 @@ angular.module('starter.controllers', [])
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Samastipur', id: 1 }
-  ];
-  $scope.labels = ["16th Jan", "17th Jan", "18th Jan", "19th Jan", "20th Jan"];
-  $scope.series = ['Max Temp', 'Min Temp','Rainfall in cms','Max Humidity in %','Min Humidity in %','Wind Speed in kmph'];
-  $scope.data = [
-    [27, 27, 25, 25, 19],
-    [13, 13, 11, 11, 13],
-    [0, 0, 0, 0, 8],
-    [58, 56, 63, 49, 84],
-    [32, 31, 30, 26, 52],
-    [7, 6, 4, 11, 9]
-  ];
-  $scope.labelstemp = ["16th Jan", "17th Jan", "18th Jan", "19th Jan", "20th Jan"];
-  $scope.seriestemp = ['Max Temp', 'Min Temp'];
-  $scope.datatemp = [
-    [27, 27, 25, 25, 19],
-    [13, 13, 11, 11, 13]
-  ];
-  $scope.labelsrain = ["16th Jan", "17th Jan", "18th Jan", "19th Jan", "20th Jan"];
-  $scope.seriesrain = ['Rainfall in cms'];
-  $scope.datarain = [
-    [0, 0, 0, 0, 8]
-  ];
-  $scope.serieshumid = ['Max Humidity in %','Min Humidity in %'];
-  $scope.datahumid = [
-    [58, 56, 63, 49, 84],
-    [32, 31, 30, 26, 52]
-  ];
-  $scope.serieswind = ['Wind Speed in kmph','Wind Direction'];
-  $scope.datawind = [
-    [7, 6, 4, 11, 9],
-    [10, 10, 10, 10, 20]
   ];
   $scope.districts = [
 
