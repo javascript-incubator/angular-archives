@@ -1,0 +1,25 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.calcite-title-main{
+  padding: 5px 10px 4px !important;
+}
+body {
+  padding: 0;
+}
+.leaflet-top .leaflet-control {
+    margin-top: 70px;
+}
+.is-active{
+  color: yellow;
+}
+.jumbotron{
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.content{
+  padding: 48px !important;
+}
