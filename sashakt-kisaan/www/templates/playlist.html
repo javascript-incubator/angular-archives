@@ -1,0 +1,20 @@
+<ion-view view-title="Major Crops">
+  <ion-content>
+    <div class="list card" ng-repeat="crop in crops">
+
+  <div class="item item-avatar">
+    <img src="{{crop.ico}}">
+    <h2>{{crop.title}}</h2>
+    <p>{{crop.type}}</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="{{crop.img}}">
+    <p>
+      {{crop.desc}}
+    </p>
+  </div>
+
+</div>
+  </ion-content>
+</ion-view>
