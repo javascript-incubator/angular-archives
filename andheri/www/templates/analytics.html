@@ -1,0 +1,36 @@
+<ion-view view-title="TOP 10s">
+  <div class="tabs-striped tabs-top tabs-background-assertive tabs-color-light">
+  <div class="tabs">
+    <a class="tab-item" ng-class="{active:tab==='TopMovies'}" href="" ng-click="getMovies('TopMovies')">
+      <i class="icon ion-star"></i>
+      Top Movies
+    </a>
+    <a class="tab-item" ng-class="{active:tab==='TopGrossedMovies'}" href="" ng-click="getMovies('TopGrossedMovies')">
+      <i class="icon ion-social-usd"></i>
+      Top Grossing Movies
+    </a>
+  </div>
+</div>
+  <ion-content class="has-subheader">
+    <div class="list card" ng-repeat="result in results">
+
+      <div class="item item-divider">
+        {{result.OriginalTitle}}
+      </div>
+      <div class="item item-image movie-poster">
+        <img src="{{result.PosterPath}}">
+      </div>
+      <div class="item item-text-wrap">
+        {{result.Description | limitTo:100}}...
+      </div>
+      <a class="item item-icon-left assertive" href="" ng-click="setCurrentMovie(result)">
+        <i class="icon ion-arrow-expand"></i>
+        More Details
+      </a>
+      <div class="item item-divider">
+        Expected Release Date : {{result.ReleaseDate}}
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

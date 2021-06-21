@@ -1,0 +1,24 @@
+<ion-view view-title="Releasing Next Week">
+  <ion-content>
+    <ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()">
+    </ion-refresher>
+    <div class="card list" ng-repeat="releasing in releasings">
+      <div class="item item-divider">
+        {{releasing.OriginalTitle}}
+      </div>
+      <div class="item item-image movie-poster">
+        <img src="{{releasing.PosterPath}}">
+      </div>
+      <div class="item item-text-wrap">
+        {{releasing.Description | limitTo:100}}...
+      </div>
+      <a class="item item-icon-left assertive" href="" ng-click="setCurrentMovie(releasing)">
+        <i class="icon ion-arrow-expand"></i>
+        More Details
+      </a>
+      <div class="item item-divider">
+        Expected Release Date : {{releasing.ReleaseDate}}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
